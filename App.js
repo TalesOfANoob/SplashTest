@@ -5,20 +5,12 @@ import {MainStackNavigator} from './src/navigation';
 import SplashScreen from 'react-native-splash-screen';
 const App = () => {
 
-  const [hideSplash,setHideSplash] = useState(false);
-
-
   useEffect(()=>{
     setTimeout(()=>{
-      setHideSplash(true);
+      SplashScreen.hide();
     },1200);
   },[]);
-
-  useEffect(()=>{
-    hideSplash && SplashScreen.hide();
-  },[hideSplash]);
-
-  console.log(hideSplash);
+  console.log(21312);
  
   return (
 
