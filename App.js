@@ -10,7 +10,6 @@ const App = () => {
       SplashScreen.hide();
     },1200);
   },[]);
-  console.log(21312);
  
   return (
 
